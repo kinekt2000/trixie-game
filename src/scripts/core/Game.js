@@ -79,8 +79,8 @@ class Game {
                 } else if(trigger_spec.type === "finish") {
                     for (const entity of targets) {
                         if (entity.player) {
-                            // const nexus = [...level.entities.values()].find(entity => entity.NAME === "nexus");
-                            const nexus = false;
+                            const nexus = [...level.entities.values()].find(entity => entity.NAME === "nexus");
+                            // const nexus = false;
                             if(!nexus){
                                 level.events.emit(Level.EVENT_WIN, entity.player);
                             }
@@ -181,7 +181,7 @@ class Game {
 
         const runGame = (event) => {
             if(event.key === "Enter") {
-                runLevel('level2');
+                runLevel('level1');
                 window.removeEventListener("keydown", runGame);
             }
         }
