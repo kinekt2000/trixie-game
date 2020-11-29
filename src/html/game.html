@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="icon" href="favicon.ico" type="image/icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #282828;
+        }
+
+        .ask-username-wrapper{
+            position: absolute;
+            top: -50%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            background-color: #b5b5b5;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            height: 100px;
+            width: 300px;
+
+            border-radius: 1rem;
+            transition: top 1s linear;
+        }
+
+        .ask-username-wrapper.show {
+            top: 5%;
+        }
+
+        #username {
+            width: 70%;
+            border-radius: 1rem;
+            border: none;
+            box-shadow: inset 0 0 1px 0 black;
+            font-size: 1rem;
+            padding: .4rem;
+            text-align: center;
+            transition: border-radius .4s ease-in-out,
+                        width .4s ease-in-out;
+        }
+
+        #username:hover {
+            border-radius: .7rem;
+        }
+
+        #username:focus {
+            width: 80%;
+        }
+
+        .ask-username-wrapper .submit {
+            font-size: .9rem;
+            background: white;
+            border: 1px solid black;
+            padding: .3rem .7rem;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: background-color 1s ease-in-out;
+        }
+
+        .ask-username-wrapper .submit:hover {
+            background-color: #67988e;
+        }
+
+    </style>
+</head>
+<body>
+    <canvas></canvas>
+</body>
+</html>

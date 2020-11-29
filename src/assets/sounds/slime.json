@@ -1,0 +1,10 @@
+{
+  "fx": {
+    "dash": {
+      "url": "/assets/audio/slime_walk.ogg"
+    },
+    "death": {
+      "url": "/assets/audio/slime_dead.ogg"
+    }
+  }
+}

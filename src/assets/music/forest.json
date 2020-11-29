@@ -1,0 +1,26 @@
+{
+  "main": {
+    "url": "/assets/audio/music/calm-forest.ogg",
+    "volume": 0.3
+  },
+
+  "thunder": {
+    "url": "/assets/audio/music/thunder.ogg",
+    "volume": 1
+  },
+
+  "levelComplete": {
+    "url": "/assets/audio/music/level-complete.ogg",
+    "volume": 0.3
+  },
+
+  "gameComplete": {
+    "url": "/assets/audio/music/game-complete.ogg",
+    "volume": 0.6
+  },
+
+  "gameOver": {
+    "url": "/assets/audio/music/game-over.ogg",
+    "volume": 1
+  }
+}

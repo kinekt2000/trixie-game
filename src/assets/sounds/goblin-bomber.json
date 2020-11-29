@@ -1,0 +1,10 @@
+{
+  "fx": {
+    "throw":{
+      "url": "/assets/audio/goblin_throw.ogg"
+    },
+    "dead": {
+      "url": "/assets/audio/goblin_dead.ogg"
+    }
+  }
+}

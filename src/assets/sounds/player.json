@@ -1,0 +1,14 @@
+{
+  "fx": {
+    "jump": {
+      "url": "/assets/audio/jump.ogg"
+    },
+    "hit": {
+      "url": "/assets/audio/hit.ogg"
+    },
+    "death": {
+      "url": "/assets/audio/death.ogg"
+    }
+  }
+
+}

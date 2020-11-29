@@ -1,0 +1,68 @@
+{
+  "name": "nexus",
+  "frames": [
+    {
+      "name": "idle-1",
+      "rect": [0, 0, 8, 8]
+    },
+    {
+      "name": "idle-2",
+      "rect": [8, 0, 8, 8]
+    },
+    {
+      "name": "idle-3",
+      "rect": [16, 0, 8, 8]
+    },
+    {
+      "name": "idle-4",
+      "rect": [24, 0, 8, 8]
+    },
+    {
+      "name": "idle-5",
+      "rect": [32, 0, 8, 8]
+    },
+    {
+      "name": "idle-6",
+      "rect": [40, 0, 8, 8]
+    },
+
+    {
+      "name": "dead-1",
+      "rect": [0, 8, 8, 8]
+    },
+    {
+      "name": "dead-2",
+      "rect": [8, 8, 8, 8]
+    },
+    {
+      "name": "dead-3",
+      "rect": [16, 8, 8, 8]
+    },
+    {
+      "name": "dead-4",
+      "rect": [24, 8, 8, 8]
+    },
+    {
+      "name": "dead-5",
+      "rect": [32, 8, 8, 8]
+    }
+  ],
+  "animations": [
+    {
+      "name": "idle",
+      "frameLength": 0.15,
+      "repeat": true,
+      "frames": [
+        "idle-1", "idle-2", "idle-3", "idle-4", "idle-5", "idle-6"
+      ]
+    },
+    {
+      "name": "dead",
+      "frameLength": 0.15,
+      "repeat": false,
+      "frames": [
+        "dead-1", "dead-2", "dead-3", "dead-4", "dead-5"
+      ]
+    }
+  ]
+}

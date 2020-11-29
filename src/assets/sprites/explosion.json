@@ -1,0 +1,57 @@
+{
+  "name": "explosion",
+  "frames": [
+    {
+      "name": "boom-1",
+      "rect": [9, 22, 14, 10]
+    },
+    {
+      "name": "boom-2",
+      "rect": [41, 22, 14, 10]
+    },
+    {
+      "name": "boom-3",
+      "rect": [69, 21, 22, 11]
+    },
+    {
+      "name": "boom-4",
+      "rect": [100, 13, 24, 19]
+    },
+    {
+      "name": "boom-5",
+      "rect": [130, 7, 28, 25]
+    },
+    {
+      "name": "boom-6",
+      "rect": [161, 6, 30, 26]
+    },
+    {
+      "name": "boom-7",
+      "rect": [192, 5, 32, 27]
+    },
+    {
+      "name": "boom-8",
+      "rect": [226, 5, 28, 27]
+    },
+    {
+      "name": "boom-9",
+      "rect": [259, 6, 26, 26]
+    },
+    {
+      "name": "boom-10",
+      "rect": [294, 6, 19, 26]
+    }
+  ],
+  "animations": [
+    {
+      "name": "boom",
+      "frameLength": 0.15,
+      "repeat": false,
+      "frames": [
+        "boom-1", "boom-2", "boom-3", "boom-4", "boom-5",
+        "boom-6", "boom-7", "boom-8", "boom-9", "boom-10"
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,102 @@
+{
+  "name": "goblin_bomber_tileset",
+  "reverse": true,
+  "frames": [
+    {
+      "name": "idle-1",
+      "rect": [1, 32, 14, 16]
+    },
+    {
+      "name": "idle-2",
+      "rect": [17, 32, 14, 16]
+    },
+    {
+      "name": "idle-3",
+      "rect": [33, 32, 14, 16]
+    },
+    {
+      "name": "idle-4",
+      "rect": [49, 32, 14, 16]
+    },
+
+
+    {
+      "name": "throw-1",
+      "rect": [2, 2, 13, 14]
+    },
+    {
+      "name": "throw-2",
+      "rect": [18, 2, 13, 14]
+    },
+    {
+      "name": "throw-3",
+      "rect": [33, 0, 15, 16]
+    },
+    {
+      "name": "throw-4",
+      "rect": [49, 1, 15, 15]
+    },
+    {
+      "name": "throw-5",
+      "rect": [66, 4, 14, 12]
+    },
+    {
+      "name": "throw-6",
+      "rect": [82, 4, 13, 12]
+    },
+
+
+    {
+      "name": "dead-1",
+      "rect": [0, 17, 13, 15]
+    },
+    {
+      "name": "dead-2",
+      "rect": [17, 17, 12, 15]
+    },
+    {
+      "name": "dead-3",
+      "rect": [35, 17, 9, 15]
+    },
+    {
+      "name": "dead-4",
+      "rect": [51, 17, 9, 15]
+    },
+    {
+      "name": "dead-5",
+      "rect": [66, 17, 11, 15]
+    },
+    {
+      "name": "dead-6",
+      "rect": [82, 17, 11, 15]
+    }
+  ],
+  "animations": [
+    {
+      "name": "idle",
+      "frameLength": 0.15,
+      "repeat": true,
+      "frames": [
+        "idle-1", "idle-2", "idle-3", "idle-4"
+      ]
+    },
+    {
+      "name": "throw",
+      "frameLength": 0.167,
+      "repeat": false,
+      "frames": [
+        "throw-1", "throw-2", "throw-3",
+        "throw-4", "throw-5", "throw-6"
+      ]
+    },
+    {
+      "name": "dead",
+      "frameLength": 0.167,
+      "repeat": false,
+      "frames": [
+        "dead-1", "dead-2", "dead-3", "dead-4", "dead-5", "dead-6"
+      ]
+    }
+  ]
+}
+

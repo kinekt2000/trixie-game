@@ -1,0 +1,143 @@
+{
+  "name": "slime_tileset",
+  "reverse": true,
+  "frames": [
+    {
+      "name": "idle-1",
+      "rect": [1, 52, 14, 12]
+    },
+    {
+      "name": "idle-2",
+      "rect": [17, 52, 14, 12]
+    },
+    {
+      "name": "idle-3",
+      "rect": [33, 52, 14, 12]
+    },
+    {
+      "name": "idle-4",
+      "rect": [49, 52, 14, 12]
+    },
+    {
+      "name": "idle-5",
+      "rect": [65, 52, 14, 12]
+    },
+
+
+    {
+      "name": "walk-1",
+      "rect": [1, 12, 14, 20]
+    },
+    {
+      "name": "walk-2",
+      "rect": [17, 12, 14, 20]
+    },
+    {
+      "name": "walk-3",
+      "rect": [33, 12, 14, 20]
+    },
+    {
+      "name": "walk-4",
+      "rect": [48, 12, 16, 20]
+    },
+    {
+      "name": "walk-5",
+      "rect": [66, 12, 12, 20]
+    },
+    {
+      "name": "walk-6",
+      "rect": [82, 12, 12, 20]
+    },
+    {
+      "name": "walk-7",
+      "rect": [97, 12, 13, 20]
+    },
+    {
+      "name": "walk-8",
+      "rect": [113, 12, 13, 20]
+    },
+    {
+      "name": "walk-9",
+      "rect": [129, 12, 13, 20]
+    },
+    {
+      "name": "walk-10",
+      "rect": [145, 12, 13, 20]
+    },
+    {
+      "name": "walk-11",
+      "rect": [161, 12, 13, 20]
+    },
+    {
+      "name": "walk-12",
+      "rect": [177, 12, 13, 20]
+    },
+    {
+      "name": "walk-13",
+      "rect": [193, 12, 14, 20]
+    },
+    {
+      "name": "walk-14",
+      "rect": [208, 12, 16, 20]
+    },
+    {
+      "name": "walk-15",
+      "rect": [225, 12, 14, 20]
+    },
+
+
+    {
+      "name": "dead-1",
+      "rect": [3, 35, 12, 13]
+    },
+    {
+      "name": "dead-2",
+      "rect": [20, 35, 12, 13]
+    },
+    {
+      "name": "dead-3",
+      "rect": [36, 35, 10, 12]
+    },
+    {
+      "name": "dead-4",
+      "rect": [52, 35, 10, 12]
+    },
+    {
+      "name": "dead-5",
+      "rect": [67, 35, 12, 12]
+    },
+    {
+      "name": "dead-6",
+      "rect": [83, 35, 12, 12]
+    }
+  ],
+  "animations": [
+    {
+      "name": "idle",
+      "frameLength": 0.15,
+      "repeat": true,
+      "frames": [
+        "idle-1", "idle-2", "idle-3", "idle-4", "idle-5"
+      ]
+    },
+    {
+      "name": "walk",
+      "frameLength": 0.06,
+      "repeat": false,
+      "frames": [
+        "walk-1", "walk-2", "walk-3", "walk-4", "walk-5",
+        "walk-6", "walk-7", "walk-8", "walk-9", "walk-10",
+        "walk-11", "walk-12", "walk-13", "walk-14", "walk-15"
+      ]
+    },
+    {
+      "name": "dead",
+      "frameLength": 0.167,
+      "repeat": false,
+      "frames": [
+        "dead-1", "dead-2", "dead-3", "dead-4", "dead-5", "dead-6"
+      ]
+    }
+  ]
+}
+

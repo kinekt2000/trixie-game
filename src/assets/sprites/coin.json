@@ -1,0 +1,57 @@
+{
+  "name": "coin",
+  "frames": [
+    {
+      "name": "idle-1",
+      "rect": [1, 1, 6, 6]
+    },
+    {
+      "name": "idle-2",
+      "rect": [9, 1, 6, 6]
+    },
+    {
+      "name": "idle-3",
+      "rect": [17, 1, 6, 6]
+    },
+    {
+      "name": "idle-4",
+      "rect": [25, 1, 6, 6]
+    },
+    {
+      "name": "idle-5",
+      "rect": [33, 1, 6, 6]
+    },
+    {
+      "name": "idle-6",
+      "rect": [41, 1, 6, 6]
+    },
+    {
+      "name": "idle-7",
+      "rect": [49, 1, 6, 6]
+    },
+    {
+      "name": "idle-8",
+      "rect": [57, 1, 6, 6]
+    },
+    {
+      "name": "idle-9",
+      "rect": [65, 1, 6, 6]
+    },
+    {
+      "name": "idle-10",
+      "rect": [73, 1, 6, 6]
+    }
+  ],
+  "animations": [
+    {
+      "name": "idle",
+      "frameLength": 0.12,
+      "repeat": true,
+      "frames": [
+        "idle-1", "idle-2", "idle-3", "idle-4", "idle-5",
+        "idle-6", "idle-7", "idle-8", "idle-9", "idle-10"
+      ]
+    }
+  ]
+}
+

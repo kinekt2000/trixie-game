@@ -1,0 +1,54 @@
+{
+  "name": "bomb",
+  "frames": [
+    {
+      "name": "idle-1",
+      "rect": [1, 1, 6, 7]
+    },
+    {
+      "name": "idle-2",
+      "rect": [8, 1, 7, 7]
+    },
+    {
+      "name": "idle-3",
+      "rect": [17, 1, 6, 7]
+    },
+    {
+      "name": "idle-4",
+      "rect": [25, 0, 6, 8]
+    },
+    {
+      "name": "idle-5",
+      "rect": [32, 2, 6, 6]
+    },
+    {
+      "name": "idle-6",
+      "rect": [41, 2, 6, 6]
+    },
+    {
+      "name": "idle-7",
+      "rect": [49, 2, 6, 6]
+    },
+    {
+      "name": "idle-8",
+      "rect": [57, 2, 6, 6]
+    },
+
+    {
+      "name": "dead",
+      "rect": [49, 2, 6, 6]
+    }
+  ],
+  "animations": [
+    {
+      "name": "idle",
+      "frameLength": 0.25,
+      "repeat": false,
+      "frames": [
+        "idle-1", "idle-2", "idle-3", "idle-4",
+        "idle-5", "idle-6", "idle-7", "idle-8"
+      ]
+    }
+  ]
+}
+
