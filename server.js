@@ -2,7 +2,7 @@ const express = require("express")
 const fs = require("fs")
 
 
-server = express()
+const server = express()
 server.use(express.static("dist"))
 
 server.get("/", (req, res) => {
@@ -17,6 +17,6 @@ server.get("/scoreboard", (req, res) => {
     res.render("scoreboard.html");
 })
 
-server.listen(3000, () => {
-    console.log("listen 3000 port")
+const listener = server.listen(process.env.PORT || 3000, () => {
+    console.log("App is listening on port " + listener.address().port)
 })
