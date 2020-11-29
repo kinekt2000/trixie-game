@@ -35,7 +35,7 @@ export default class Player extends Trait {
 
     update(player, game_context, level) {
         if(this.lives === 0) {
-            level.events.emit(Level.EVENT_GAMEOVER)
+            level.events.emit(Level.EVENT_GAMEOVER, this);
         }
     }
 }

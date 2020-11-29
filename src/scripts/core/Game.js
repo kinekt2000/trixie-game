@@ -79,19 +79,19 @@ class Game {
                 } else if(trigger_spec.type === "finish") {
                     for (const entity of targets) {
                         if (entity.player) {
-                            const nexus = [...level.entities.values()].find(entity => entity.NAME === "nexus");
-                            // const nexus = false;
+                            // const nexus = [...level.entities.values()].find(entity => entity.NAME === "nexus");
+                            const nexus = false;
                             if(!nexus){
-                                level.events.emit(Level.EVENT_WIN);
+                                level.events.emit(Level.EVENT_WIN, entity.player);
                             }
                         }
                     }
                 }
             })
 
-            level.events.listen(Level.EVENT_GAMEOVER, () => {
-                const coins = player.player.coins;
-                const score = player.player.score;
+            level.events.listen(Level.EVENT_GAMEOVER, (player) => {
+                const coins = player.coins;
+                const score = player.score;
 
                 const totalScore = score + coins * 5;
 
@@ -112,11 +112,13 @@ class Game {
                 this.gameover(totalScore);
             })
 
-            level.events.listen(Level.EVENT_WIN, () => {
-                const coins = player.player.coins;
-                const extraLives = player.player.lives - 1;
+            level.events.listen(Level.EVENT_WIN, (player) => {
+                const coins = player.coins;
+                const extraLives = player.lives - 1;
                 const time = this.accumulatedTime + this.level.getTime();
-                const score = player.player.score;
+                const score = player.score;
+
+                console.log(player);
 
                 const totalScore = score + coins * 5 + extraLives * 60 + time;
                 const winScreen = new Scene();
@@ -176,11 +178,14 @@ class Game {
             }
         }
 
-        window.addEventListener("keydown", (event) => {
+
+        const runGame = (event) => {
             if(event.key === "Enter") {
-                runLevel('level1');
+                runLevel('level2');
+                window.removeEventListener("keydown", runGame);
             }
-        }, {once: true});
+        }
+        window.addEventListener("keydown", runGame);
         window.runLevel = runLevel;
     }
 
