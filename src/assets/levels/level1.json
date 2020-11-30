@@ -1391,8 +1391,8 @@
                  "type":"enemy",
                  "visible":true,
                  "width":0,
-                 "x":72.25,
-                 "y":299.583333333333
+                 "x":312.25,
+                 "y":118.25
                 }, 
                 {
                  "height":0,
@@ -1695,7 +1695,7 @@
                 }],
          "opacity":1,
          "type":"objectgroup",
-         "visible":false,
+         "visible":true,
          "x":0,
          "y":0
         }, 
